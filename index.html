@@ -38,7 +38,7 @@
     .brand .txt { display:flex; flex-direction:column; line-height:1.15 }
     .brand .txt strong { font-weight:800 }
     .brand .txt span { font-weight:600; color:var(--muted); font-size:12px }
-    .hero { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: center; padding: 28px 0 28px; border-bottom: 1px solid var(--line); }
+    .hero { display: grid; grid-template-columns: 1fr; gap: 28px; align-items: center; padding: 20px 0 20px; border-bottom: 1px solid var(--line); }
     .hero h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.2; margin: 0 0 12px; }
     .hero p { color: var(--muted); font-size: 17px; }
     .tag { display:inline-block; font-size: 12px; letter-spacing: .02em; color: var(--accent);
@@ -48,9 +48,12 @@
     .grid .wide { grid-column: 1 / -1; padding: 24px; }
     .card h3 { margin: 0 0 8px; font-size: 18px; }
     .card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
-    .section { padding: 48px 0; }
+    .section { padding: 40px 0; border-top: 1px solid var(--line); }
     .section h2 { margin: 0 0 16px; font-size: 24px; }
     .section .desc { margin: 0 0 16px; color: var(--muted); }
+    .news-list { display: flex; flex-direction: column; gap: 18px; }
+    .news-item { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; }
+    .news-date { display: inline-block; font-size: 0.9rem; color: var(--muted); margin-bottom: 4px; }
     .list { display: grid; gap: 10px; }
     .list .item { background: var(--card); border: 1px solid var(--line); padding: 14px 16px; border-radius: 14px; }
     .item strong { color: var(--text); }
@@ -121,6 +124,25 @@
             <p>Contact: <a href="mailto:krmoon@hufs.ac.kr" style="color:var(--accent);text-decoration:none;">krmoon@hufs.ac.kr</a><br>
             Location: HUFS Global Campus</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <h2 style="font-size:1.6rem; margin-bottom:16px;">Latest News</h2>
+    
+      <div class="news-list">
+        <div class="news-item">
+          <span class="news-date">2025.03</span>
+          <p><strong>New publication</strong>: Paper on microbial carbon cycling accepted in *Environmental Microbiology*.</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2025.02</span>
+          <p><strong>New member</strong>: Welcome graduate student <em>Minji Kim</em> to MMEL!</p>
+        </div>
+        <div class="news-item">
+          <span class="news-date">2025.01</span>
+          <p><strong>Grant awarded</strong>: MMEL receives HUFS research fund for microbial genomics study.</p>
         </div>
       </div>
     </section>
