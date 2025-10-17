@@ -1,3 +1,171 @@
-<title>Kira Moon's MMEL</title>
-<h1>Welcome to <em>MMEL</em> at HUFS</h1>
-<p>소개글</p>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kira Moon | MMEL @ HUFS</title>
+  <meta name="description" content="Structural Health Monitoring (SHM), Smart Sensors, and Digital Twin" />
+  <style>
+    :root {
+      --bg: #0b0f17; /* dark blue-gray */
+      --card: #121826;
+      --text: #e6edf3;
+      --muted: #9fb3c8;
+      --accent: #7cc0ff;
+      --line: #1e2636;
+    }
+
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple SD Gothic Neo", "Nanum Gothic", "Noto Sans CJK KR", "Noto Sans KR", sans-serif; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+
+    header { position: sticky; top: 0; backdrop-filter: saturate(150%) blur(8px); background: color-mix(in oklab, var(--bg) 80%, transparent); border-bottom: 1px solid var(--line); z-index: 50; }
+    nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    nav a { color: var(--muted); text-decoration: none; font-weight: 600; padding: 10px 12px; border-radius: 10px; }
+    nav a:hover { color: var(--text); background: var(--line); }
+
+    .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items: center; padding: 56px 0; border-bottom: 1px solid var(--line); }
+    .hero h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.2; margin: 0 0 12px; }
+    .hero p { color: var(--muted); font-size: 17px; }
+    .hero .tag { display: inline-block; font-size: 12px; letter-spacing: .02em; color: var(--accent); background: #0c2338; border: 1px solid #163a5c; padding: 6px 10px; border-radius: 999px; }
+
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px; }
+    .card h3 { margin: 0 0 8px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+
+    .section { padding: 48px 0; }
+    .section h2 { margin: 0 0 16px; font-size: 24px; }
+    .section .desc { margin: 0 0 16px; color: var(--muted); }
+
+    .list { display: grid; gap: 10px; }
+    .list .item { background: var(--card); border: 1px solid var(--line); padding: 14px 16px; border-radius: 14px; }
+    .item strong { color: var(--text); }
+    .item span { color: var(--muted); }
+
+    footer { padding: 28px 0 40px; color: var(--muted); border-top: 1px solid var(--line); }
+
+    .btns { display: flex; gap: 12px; margin-top: 16px; }
+    .btn { display: inline-block; padding: 10px 14px; font-weight: 700; border-radius: 12px; text-decoration: none; border: 1px solid var(--line); color: var(--text); }
+    .btn.primary { background: linear-gradient(135deg, #1a4c7a, #0f2f4d); border: 1px solid #154064; }
+    .btn:hover { filter: brightness(1.1); }
+
+    /* responsive */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+    }
+      .avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;border:2px solid var(--line);box-shadow:0 6px 18px rgba(0,0,0,.25);}
+    .light{--bg:#ffffff;--card:#f7f8fb;--text:#0e1626;--muted:#5b6b7e;--accent:#215cff;--line:#e5e9f2;}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div style="display:flex;align-items:center;gap:10px;font-weight:800;">
+          <span style="display:inline-block;width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#1a4c7a,#0f2f4d);"></span>
+          <span>MMEL @ HUFS</span>
+        </div>
+        <div>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#pubs">Publications</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button id="themeToggle" class="btn" style="margin-left:8px">Toggle theme</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <div>
+        <span class="tag">Monitoring • Materials • Electronics • Lab</span>
+        <h1>Welcome to <em style="font-style:normal;color:var(--accent)">MMEL</em> at HUFS</h1>
+        <p>금속/재료 및 전자 기반 계측 연구실(MMEL)입니다. 센서 하드웨어와 데이터 파이프라인을 설계하고, 실험과 현장 데이터를 통해 신뢰할 수 있는 지표를 만듭니다.</p>
+        $1
+      <div style="margin-top:18px;display:flex;align-items:center;gap:14px;">
+        <img src="assets/avatar.jpg" alt="lab avatar" class="avatar" onerror="this.style.display='none'">
+        <div style="color:var(--muted);font-size:14px;line-height:1.5">대표 연락: <a href="mailto:your.name@example.com" style="color:var(--accent);text-decoration:none;">your.name@example.com</a><br>위치: Hankuk University of Foreign Studies (HUFS)</div>
+      </div>
+      <div>
+        <div class="grid">
+          <div class="card"><h3>IUM</h3><p>저전력 멀티센서 네트워크. 가속도·변형률·온도 통합 계측과 엣지 인퍼런스.</p></div>
+          <div class="card"><h3>VID</h3><p>레이저 거리계+카메라 기반 휴대형 균열/변위 시각점검 디바이스.</p></div>
+          <div class="card"><h3>JANET</h3><p>다축 가속도/아날로그 채널 동시계측을 통한 다점 데이터 취득 플랫폼.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2>About</h2>
+      <p class="desc">스마트 센서 하드웨어부터 데이터 파이프라인, 모델링까지 <strong>end-to-end</strong>로 다룹니다.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>What I do</h3>
+          <p>센서 하드웨어(PCB/펌웨어), 데이터 수집(InfluxDB/MQTT), 분석·시각화(Streamlit/Grafana),
+          AI 기반 추정(LSTM, PINN) 및 디지털 트윈 구축.</p>
+        </div>
+        <div class="card">
+          <h3>Interests</h3>
+          <p>교량 계측, 변위/변형률 복원, 균열 탐지, 로우파워 무선, 현장 실증 및 상용화.</p>
+        </div>
+        <div class="card">
+          <h3>Now</h3>
+          <p>현장 배치형 IUM 노드 고도화, VID 업그레이드, 하와이 현장 데이터 정리, 논문 투고 준비.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="list">
+        <div class="item"><strong>IUM</strong> — Intelligent Understanding & Monitoring network for SHM. <span>2023–Now</span></div>
+        <div class="item"><strong>VID</strong> — Portable visual inspection device integrated with laser ranging. <span>2022–Now</span></div>
+        <div class="item"><strong>JANET</strong> — Multi‑channel strain sensing & instant shape visualization. <span>2021–Now</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="pubs">
+      <h2>Publications (selected)</h2>
+      <div class="list">
+        <div class="item"><strong>Portable Visual Inspection Device (VID)</strong> — Automation in Construction (under review).
+        <br /><span>Laser‑camera fusion for scale/angle estimation and crack quantification.</span></div>
+        <div class="item"><strong>Low‑power Multi‑channel Strain Sensor</strong> — IEEE Access (prep).
+        <br /><span>Multi‑point acquisition and mode‑shape visualization for bridges.</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p class="desc">협업·세미나·프로젝트 제안 환영합니다.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Email</h3>
+          <p><a href="mailto:your.name@example.com" style="color:var(--accent);text-decoration:none;">your.name@example.com</a></p>
+        </div>
+        <div class="card">
+          <h3>GitHub</h3>
+          <p><a href="https://github.com/your‑github" style="color:var(--accent);text-decoration:none;">github.com/your‑github</a></p>
+        </div>
+        <div class="card">
+          <h3>Google Scholar</h3>
+          <p><a href="#" style="color:var(--accent);text-decoration:none;">scholar profile</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> Jongbin Won — Built with GitHub Pages</div>
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    (function(){
+      var t=document.getElementById('themeToggle');
+      if(t){t.addEventListener('click',function(){document.body.classList.toggle('light');});}
+    })();
+  </script>
+</body>
+</html>
