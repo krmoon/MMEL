@@ -1,0 +1,1 @@
+Put avatar.jpg, favicon.png, and other images here.
