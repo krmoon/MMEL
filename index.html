@@ -65,6 +65,23 @@
       background: #0c2338; color: var(--text); }
     #themeToggle:hover { filter:brightness(1.1); }
     @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr; } }
+    /* Openings banner */
+    .callout { padding: 22px 24px; }
+    .callout-head { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+    .badge {
+      display:inline-block; font-size:12px; letter-spacing:.02em; color:var(--accent);
+      background:#0c2338; border:1px solid #163a5c; padding:6px 10px; border-radius:999px;
+    }
+    .callout-title { margin:0; font-size:22px; }
+    .callout-text { color:var(--muted); margin:10px 0 12px; }
+    .callout-list { margin:0 0 14px 18px; color:var(--muted); }
+    .callout-foot { display:flex; gap:12px; flex-wrap:wrap; }
+    
+    /* 버튼 모양(사이트 공통) */
+    .btn { display:inline-block; padding:10px 14px; font-weight:700; border-radius:12px;
+           text-decoration:none; border:1px solid var(--line); color:var(--text); }
+    .btn.primary { background: linear-gradient(135deg, #1a4c7a, #0f2f4d); border: 1px solid #154064; }
+    .btn:hover { filter: brightness(1.1); }
   </style>
 
 </head>
@@ -133,16 +150,35 @@
     
       <div class="news-list">
         <div class="news-item">
-          <span class="news-date">2025.03</span>
-          <p><strong>New publication</strong>: Paper on microbial carbon cycling accepted in *Environmental Microbiology*.</p>
+          <span class="news-date">2025.11</span>
+          <p><strong>New member</strong>: Welcome undergraduate student <em>이름</em> to MMEL!</p>
         </div>
-        <div class="news-item">
-          <span class="news-date">2025.02</span>
-          <p><strong>New member</strong>: Welcome graduate student <em>Minji Kim</em> to MMEL!</p>
+      </div>
+    </section>
+
+    <section class="section" id="openings">
+      <div class="card callout">
+        <div class="callout-head">
+          <span class="badge">Openings</span>
+          <h2 class="callout-title">MMEL is recruiting students & RAs</h2>
         </div>
-        <div class="news-item">
-          <span class="news-date">2025.01</span>
-          <p><strong>Grant awarded</strong>: MMEL receives HUFS research fund for microbial genomics study.</p>
+    
+        <p class="callout-text">
+          We welcome motivated students interested in microbial ecology, metagenomics, and biogeochemistry.
+          If you like both lab work and data analysis, let’s talk!
+        </p>
+    
+        <ul class="callout-list">
+          <li>Graduate students (MS/PhD) — Fall 2025 / Spring 2026</li>
+          <li>Undergraduate research interns (part-time OK)</li>
+          <li>Research assistant (wet-lab support & sequencing prep)</li>
+        </ul>
+    
+        <div class="callout-foot">
+          <a class="btn primary" href="mailto:krmoon@hufs.ac.kr?subject=[MMEL] Open position inquiry">
+            Email CV to krmoon@hufs.ac.kr
+          </a>
+          <a class="btn" href="contact.html#openings">More details</a>
         </div>
       </div>
     </section>
